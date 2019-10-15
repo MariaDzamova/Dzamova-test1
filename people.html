@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>Aplikacia Osoby</title>
+        </head>
+        
+        <body>
+            
+         <main>
+
+
+                <form>
+                    <label>New person:
+                        <input type="text" id="pName" placeholder="Name"/>
+                        <input type="number" id="pAge" placeholder="Age"/>
+                        <input type="text" id="pSex" placeholder="Sex"/>
+                    </label>
+                    <button type="button" id="btAddPerson" onclick="addPerson()">Add person</button>
+
+                    <br /> <br />
+
+                    <label>Person id:
+                        <input type="text" id="perIdEdt"  placeholder="id of the person to edit"/>
+                    </label>
+
+                    <label>New person info:
+                            <input type="text" id="pNameNew" placeholder="Edit Name"/>
+                            <input type="number" id="pAgeNew" placeholder="Edit Age"/>
+                            <input type="text" id="pSexNew" placeholder="Edit Sex"/>
+                    </label>
+
+
+                    <button type="button"  id="buttEdt" onclick="editPerson()">Edit person info</button>
+
+                    <br /> <br />
+
+                    <label>Person id:
+                        <input type="text" id="perIdRem"  placeholder="id of the person to remove"/>
+                    </label>
+
+
+                    <button type="button"  id="buttRem" onclick="deletePerson()">Delete  person</button>
+
+
+                    <br /> <br />
+
+                    <button type="button"  id="btGetAllPeople" onclick="getPeople()">Get all people</button>
+                    <br /> <br />
+
+                </form>
+
+                <h2>People</h2>
+                    <form id="frmPeople">
+                    </form>
+
+                    <textarea id="tareaResponse" cols="200" rows="30"></textarea>
+
+                
+        </main>
+
+
+<!-- Vlozenie skriptu pre tuto stranku  -->
+
+
+        <script src="people2.js"></script>
+    </body>
+</html>
